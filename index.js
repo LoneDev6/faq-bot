@@ -121,7 +121,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.reply({
         content: `✅ Sent FAQ under tag: \`${tag}\``,
         ephemeral: true
-      }
+      });
     } else {
       await interaction.reply({ content: '❌ Tag not found.', ephemeral: true });
     }
